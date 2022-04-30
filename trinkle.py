@@ -264,7 +264,7 @@ class Trkl:
           init = file[i][17:]
           client = commands.Bot(command_prefix=init)
         elif file[i].startswith("discord-bot.connect "):
-          token = "OTYxNTY5Njc1MTk0NTMxODQw.Yk65iw.C4A72n79Z7dU57MtTTMDEsvxlCE"
+          token = file[i][19:]
           client.run(token)
         elif file[i] == "<endcheck>":
           pass
